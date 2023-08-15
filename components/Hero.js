@@ -1,6 +1,5 @@
 import  IconHero from "./icons/IconHero";
-import SocialIcon from "./social-icons";
-
+ 
 
 const Hero = () => {
   return (

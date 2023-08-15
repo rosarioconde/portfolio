@@ -14,8 +14,6 @@ export default function Projects() {
            Algunos proyectos que fueron desarrollados.
           </p>
         </div>
-        {/* <div className="container py-12">
-          <div className="-m-4 flex flex-wrap"> */}
         <div className="content-center py-12">
          <div className="flex flex-wrap justify-center">
             {projectsData.map((d) => (

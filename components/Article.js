@@ -1,16 +1,13 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 
 export default function Article({publication}) {
   const [ id, category, title, description, timeRead, datePublication, image, example, tip] = publication;
 
   return (
-    <>
-    <div key={id} className="mb-4 mt-16 md:mb-0 w-full max-w-screen-md mx-auto h-80 relative ">
+    <Fragment key={id}>
+    <div className="mb-4 mt-16 md:mb-0 w-full max-w-screen-md mx-auto h-80 relative ">
         <div className="absolute left-0 bottom-0 w-full h-full z-10"
-       style={{
-        backgroundImage:
-          'linear-gradient(180deg,transparent,rgba(0,0,0,.7));',
-      }}></div>
+      ></div>
      <img src={image} className="absolute left-0 top-0 w-full h-full z-0 object-cover rounded-xl" />
     <div className="p-4 absolute bottom-0 left-0 z-20">
       <a href="#"
@@ -38,6 +35,6 @@ export default function Article({publication}) {
         {tip}
     </div>
   </div>
-  </>
+  </Fragment>
   )
 }

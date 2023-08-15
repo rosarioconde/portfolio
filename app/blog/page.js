@@ -11,7 +11,6 @@ export default async function Blog() {
           <div className="mt-8">
             {publications.map((publication)  => {
               const [id, category, title, description, timeRead, datePublication, image ] = publication;
-
                 return (
                  <div key={id} className="mb-4 flex flex-col md:flex-row    p-3  rounded-xl shadow-lg  max-w-xs md:max-w-3xl mx-auto border border-gray-300 bg-white">
                   <div className="w-full md:w-1/3 bg-white grid place-items-center  p-2">

@@ -3,11 +3,11 @@ import IconHero from './icons/IconHero'
 
 const Presentation = () => {
   return (
-    <section class="bg-white border-b my-8 py-8">
-		<div class="container max-w-5xl mx-auto m-8 px-6 pt-14 lg:px-8">
-			<h1 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">.Frontend Developer.</h1>
-			<div class="w-full mb-4  py-8">
-				<div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
+    <section className="bg-white border-b my-8 py-8">
+		<div className="container max-w-5xl mx-auto m-8 px-6 pt-14 lg:px-8">
+			<h1 className="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">.Frontend Developer.</h1>
+			<div className="w-full mb-4  py-8">
+				<div className="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
 
             <div className="hidden mt-5 sm:mb-2 sm:flex sm:justify-center">
               <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">

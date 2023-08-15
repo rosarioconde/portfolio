@@ -1,15 +1,8 @@
-import Timeline from '@/components/Timeline';
-import Image from 'next/image'
 import React from 'react'
-import { FaReact, FaJs, FaNodeJs, FaCss3, FaHtml5, FaBootstrap, FaLinkedin, FaGithub } from 'react-icons/fa';
-import iconBackground from '../../components/icons/iconBackground';
 
 function AboutPage() {
   return (
     <>
-
- 
-
      <section className="d-block bg-gray-100 pb-16 mt-16">
       {/* <div className="bg-gradient-to-r from-purple-800 to-purple-700 h-72"></div>     */}
       <div className="bg-gradient-to-r h-72"></div>
@@ -17,9 +10,9 @@ function AboutPage() {
         {/* <div className="max-w-7xl bg-white dark:bg-slate-950 dark:text-gray-100 mx-auto px-2 sm:px-4 lg:px-8 -mt-16 rounded-md"> */}
         <div className="max-w-7xl bg-white border text-gray-900 mx-auto px-2 sm:px-4 lg:px-8 -mt-16 rounded-md">
           <div className="flex justify-center">
-            <img src="/static/images/rosarioconde.jpeg" width="140" height="135" alt="Rosario Conde" class="-mt-16 rounded-full border-[2px] border-blue-400 ring-opacity-100" />
+            <img src="/static/images/rosarioconde.jpeg" width="140" height="135" alt="Rosario Conde" className="-mt-16 rounded-full border-[2px] border-blue-400 ring-opacity-100" />
               </div>
-            <header class="text-center p-4">
+            <header className="text-center p-4">
         <h1 className="font-bold text-3xl">  Rosario Conde</h1>
         <p className="text-blue-900 ">
          Frontend Developer
