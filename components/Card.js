@@ -3,25 +3,12 @@ import Link from './CustomLink'
 
 const Card = ({ title, description, tech, imgSrc, href }) => (
 
-//   <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-4">
-//   <div className="bg-white dark:bg-gray-800 shadow-lg rounded-lg overflow-hidden">
-//     <img className="w-full h-32 object-cover" src={imgSrc} alt={title} />
-//     <div className="p-4">
-//       <h2 className="text-xl font-semibold text-gray-800 dark:text-white">{title}</h2>
-//       <p className="text-gray-600 dark:text-gray-400">{description}</p>
-//       <a href={href} className="block mt-3 text-primary dark:text-secondary">
-//         Learn More
-//       </a>
-//     </div>
-//   </div>
-// </div>
 
 <div className="w-full md p-2 sm:w-1/2 md:w-1/2 lg:w-1/3" >
-  {/* <div className="md p-4 md:w-1/2 " style={{ maxWidth: '544px' }}> */}
     <div
       className={`${
         imgSrc && 'h-full'
-      }  overflow-hidden rounded-md border-2 border-gray-200 border-opacity-60 dark:border-gray-700`}
+      }  overflow-hidden rounded-md border-2 border-gray-200 border-opacity-60  `}
     >
       {imgSrc &&
         (href
