@@ -1,40 +1,51 @@
-import React, { Fragment } from 'react'
+/* eslint-disable @next/next/no-img-element */
+import {Fragment} from "react";
 
 export default function Article({publication}) {
-  const [ id, category, title, description, timeRead, datePublication, image, example, tip] = publication;
+  const [id, category, title, description, timeRead, datePublication, image, example, tip] =
+    publication;
 
   return (
     <Fragment key={id}>
-    <div className="mb-4 mt-16 md:mb-0 w-full max-w-screen-md mx-auto h-80 relative ">
-        <div className="absolute left-0 bottom-0 w-full h-full z-10"
-      ></div>
-     <img src={image} className="absolute left-0 top-0 w-full h-full z-0 object-cover rounded-xl" />
-    <div className="p-4 absolute bottom-0 left-0 z-20">
-      <a href="#"
-        className="px-4 py-1 bg-slate-700 opacity-80 p-2 text-gray-200 inline-flex items-center justify-center mb-2">{category}</a>
-      <h2 className="text-4xl font-semibold  p-2 bg-slate-700 opacity-80 text-gray-100 leading-tight">
-       {title}
-      </h2>
-      <div className="flex mt-3  bg-slate-700 opacity-80 p-2">
-        <img src="/static/images/rosarioconde.jpeg"
-          className="h-10 w-10 rounded-full mr-2 object-cover" />
-        <div>
-          <p className="font-semibold text-gray-200 text-sm"> Rosario Conde - Read:  {timeRead}</p>
-          <p className="font-semibold text-gray-400 text-xs"> {datePublication} </p>
+      <div className="relative mx-auto mb-4 mt-16 h-80 w-full max-w-screen-md md:mb-0 ">
+        <div className="absolute bottom-0 left-0 z-10 h-full w-full"></div>
+        <img
+          src={image}
+          className="absolute left-0 top-0 z-0 h-full w-full rounded-xl object-cover"
+        />
+        <div className="absolute bottom-0 left-0 z-20 p-4">
+          <a
+            href="#"
+            className="mb-2 inline-flex items-center justify-center bg-slate-700 p-2 px-4 py-1 text-gray-200 opacity-80"
+          >
+            {category}
+          </a>
+          <h2 className="bg-slate-700 p-2  text-4xl font-semibold leading-tight text-gray-100 opacity-80">
+            {title}
+          </h2>
+          <div className="mt-3 flex  bg-slate-700 p-2 opacity-80">
+            <img
+              src="/static/images/rosarioconde.jpeg"
+              className="mr-2 h-10 w-10 rounded-full object-cover"
+            />
+            <div>
+              <p className="text-sm font-semibold text-gray-200">
+                {" "}
+                Rosario Conde - Read: {timeRead}
+              </p>
+              <p className="text-xs font-semibold text-gray-400"> {datePublication} </p>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
 
-  <div className="px-4 lg:px-0 mt-12 text-gray-700 max-w-screen-md mx-auto text-lg leading-relaxed">
-    <p className="pb-6">{description}</p>
+      <div className="mx-auto mt-12 max-w-screen-md px-4 text-lg leading-relaxed text-gray-700 lg:px-0">
+        <p className="pb-6">{description}</p>
 
-  <img src={example} alt="" className="rounded-xl" />
-    <h4 className="text-2xl text-gray-800 font-semibold mb-4 mt-8">Tip</h4>
-    <div className="border-l-4 border-gray-500 pl-4 mb-6 italic rounded">
-        {tip}
-    </div>
-  </div>
-  </Fragment>
-  )
+        <img src={example} alt="" className="rounded-xl" />
+        <h4 className="mb-4 mt-8 text-2xl font-semibold text-gray-800">Tip</h4>
+        <div className="mb-6 rounded border-l-4 border-gray-500 pl-4 italic">{tip}</div>
+      </div>
+    </Fragment>
+  );
 }
