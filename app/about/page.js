@@ -48,6 +48,23 @@ function AboutPage() {
             </header>
           </div>
         </div>
+        {/* </section>
+      <section className="  border-b bg-gray-100  p-2 "> */}
+        <div className="m-16  mx-auto max-w-7xl rounded-md border  bg-white  px-2 text-gray-900 sm:px-4 lg:px-8">
+          <div className=" p-6  ">
+            <h4 className="mb-3 text-2xl font-bold leading-none text-gray-800  ">
+              Job Opportunities
+            </h4>
+            <p className="mb-8 text-gray-600">
+              {" "}
+              I am open to job opportunities where I can contribute, learn, and grow. If you have a
+              good opportunity that matches my skills and experience, please do not hesitate to
+              contact me.
+              <br />
+              <br />{" "}
+            </p>
+          </div>
+        </div>
       </section>
     </>
   );

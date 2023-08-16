@@ -12,27 +12,30 @@ const Presentation = () => {
 
           <div className="mt-5 hidden sm:mb-2 sm:flex sm:justify-center">
             <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
-              Rosario Conde.{" "}
+              {" -> "}
               <a
                 href="https://www.linkedin.com/in/rosario-conde/"
                 className="font-semibold text-indigo-600"
                 target="_blank"
                 rel="noreferrer"
-              ></a>
+              >
+                Rosario Conde.
+              </a>
             </div>
           </div>
         </div>
 
         <div className="flex flex-wrap  ">
-          <div className="w-5/6 p-6 sm:w-1/2 ">
-            <h3 className="mb-3 text-3xl font-bold leading-none text-gray-800  ">
-              Job Opportunities
-            </h3>
+          <div className="mx-auto w-5/6 pt-8  sm:w-1/2 ">
+            <h2 className="  text-3xl font-light text-gray-500 ">
+              &quot;Cada línea de código es una oportunidad para transformar una idea en una
+              experiencia que inspire y conecte con el mundo.&quot;
+            </h2>
             <p className="mb-8 text-gray-600">
               {" "}
-              I am open to job opportunities where I can contribute, learn, and grow. If you have a
+              {/* I am open to job opportunities where I can contribute, learn, and grow. If you have a
               good opportunity that matches my skills and experience, please do not hesitate to
-              contact me.
+              contact me. */}
               <br />
               <br />{" "}
             </p>

@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
 import {getGoogleSheetsData} from "@/data/api";
 
@@ -15,7 +16,7 @@ export default async function Blog() {
             return (
               <div
                 key={id}
-                className="mx-auto mb-4 flex max-w-xs    flex-col  rounded-xl border  border-gray-300 bg-white p-3 shadow-lg md:max-w-3xl md:flex-row"
+                className="mx-auto mb-4 flex max-w-xs flex-col  rounded-xl border  border-gray-300 bg-white p-3 shadow-lg md:max-w-3xl md:flex-row"
               >
                 <div className="grid w-full place-items-center bg-white p-2  md:w-1/3">
                   <img src={image} alt="tailwind logo" className="rounded-md " />
