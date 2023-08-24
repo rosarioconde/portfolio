@@ -1,13 +1,10 @@
 /* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable @next/next/no-img-element */
-import {Fragment} from "react";
-
 export default function Article({publication}) {
   const [id, category, title, description, timeRead, datePublication, image, example, tip] =
     publication;
-
   return (
-    <Fragment key={id}>
+    <div key={id}>
       <div className="relative mx-auto mb-4 mt-16 h-80 w-full max-w-screen-md md:mb-0 ">
         <div className="absolute bottom-0 left-0 z-10 h-full w-full"></div>
         <img
@@ -47,6 +44,6 @@ export default function Article({publication}) {
         <h4 className="mb-4 mt-8 text-2xl font-semibold text-gray-800">Tip</h4>
         <div className="mb-6 rounded border-l-4 border-gray-500 pl-4 italic">{tip}</div>
       </div>
-    </Fragment>
+    </div>
   );
 }

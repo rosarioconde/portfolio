@@ -1,5 +1,7 @@
-import Article from "@/components/Article";
 import {getGoogleSheetsData} from "@/data/api";
+import {Suspense} from "react";
+import Loading from "@/components/Loading";
+import Article from "@/components/Article";
 
 export default async function blog({params: {id}}) {
   const range = `products!A${id}:I${id}`;
@@ -11,7 +13,13 @@ export default async function blog({params: {id}}) {
         <div className="flex flex-col items-center justify-center">
           <div className="m-8">
             {publications.map((publication) => {
-              return <Article key={publication.id} publication={publication} />;
+              return (
+                <>
+                  <Suspense fallback={<Loading />}>
+                    <Article key={publication.id} publication={publication} />
+                  </Suspense>
+                </>
+              );
             })}
           </div>
         </div>

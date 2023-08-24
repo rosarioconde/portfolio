@@ -2,40 +2,36 @@ module.exports = {
   env: {
     browser: true,
     es2021: true,
-    node: true
+    node: true,
   },
   extends: [
-    'next',
-    'next/core-web-vitals',
-    'plugin:react/recommended',
-    'plugin:react/jsx-runtime',
-    'plugin:prettier/recommended',
-    'standard',
-    'prettier',
+    "next",
+    "next/core-web-vitals",
+    "plugin:react/recommended",
+    "plugin:react/jsx-runtime",
+    "plugin:prettier/recommended",
+    "standard",
+    "prettier",
   ],
   overrides: [
     {
       env: {
-        node: true
+        node: true,
       },
-      files: [
-        '.eslintrc.{js,cjs}'
-      ],
+      files: [".eslintrc.{js,cjs}"],
       parserOptions: {
-        sourceType: 'script'
-      }
-    }
+        sourceType: "script",
+      },
+    },
   ],
   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module'
+    ecmaVersion: "latest",
+    sourceType: "module",
   },
-  plugins: [
-    'react','prettier','import',
-  ],
+  plugins: ["react", "prettier", "import"],
   rules: {
     "react/prop-types": "off",
-    'react/react-in-jsx-scope': 'off',
+    "react/react-in-jsx-scope": "off",
     "prettier/prettier": [
       "warn",
       {
@@ -50,4 +46,4 @@ module.exports = {
       },
     ],
   },
-}
+};
